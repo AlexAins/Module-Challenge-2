@@ -1,0 +1,73 @@
+
+:root{
+    --background1: #10101a;
+    --rainbow: linear-gradient(to right, orange , yellow, cyan, blue, violet);
+    --primaryColor: rgb(206, 229, 249);
+}
+
+* {
+    box-sizing: border-box;
+    background-color: var(--background1);
+}
+  
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--primaryColor);
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+}
+  
+p{
+    margin: 0;
+}
+
+/* Nav Bar */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#logo{
+    display: inline-block;
+    font-family: cursive;
+    font-size: 50px;
+    padding-left: 5px;
+}
+
+#navBar{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.navButtons li{
+    display: inline-block;
+    padding: 1px 60px;
+    list-style: none;
+    cursor: pointer;
+}
+
+#resumeNav{
+    background: var(--rainbow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 8px;
+    border: 6px transparent ;
+}
