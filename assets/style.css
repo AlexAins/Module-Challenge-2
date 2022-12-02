@@ -3,6 +3,7 @@
     --background1: #10101a;
     --rainbow: linear-gradient(to right, orange , yellow, cyan, blue, violet);
     --primaryColor: rgb(206, 229, 249);
+    --secondaryColor: 
 }
 
 * {
@@ -38,10 +39,10 @@ p{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    border-bottom: 1px solid;
     padding-right: 15px;
     padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0px, auto, 250px, auto;
 }
 
 #logo{
@@ -61,13 +62,24 @@ p{
     display: inline-block;
     padding: 1px 60px;
     list-style: none;
+    font-size: 20px;
+}
+
+.navButtons li:hover{
     cursor: pointer;
+    color: cyan;
+    text-decoration: underline;
 }
 
 #resumeNav{
     background: var(--rainbow);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    border-radius: 8px;
-    border: 6px transparent ;
 }
+
+#resumeNav:hover{
+    text-decoration: underline;
+}
+
+/* Hi Section */
