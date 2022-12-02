@@ -1,11 +1,12 @@
 
 :root{
     --background1: #10101a;
-    --rainbow: linear-gradient(to right, orange , yellow, cyan, blue, violet);
+    --rainbow: linear-gradient(to right, red, violet, cyan, blue);
     --primaryColor: rgb(206, 229, 249);
-    --secondaryColor: rgba(11, 102, 221, 0.951);
-    --thirdColor:rgb(162, 180, 196);
-    --fourthColor:rgb(124, 135, 147);
+    --secondaryColor: rgba(5, 225, 225, 0.951);
+    --thirdColor:rgb(144, 160, 174);
+    --fourthColor:rgb(96, 103, 111);
+    --headingSize1: 50px;
 }
 
 * {
@@ -150,6 +151,10 @@ p{
 #aboutHeading{
     grid-area: aboutHeading;
     border: solid;
+    align-self: flex-start;
+    justify-self: flex-end;
+    color: var(--primaryColor);
+    font-size: var(--headingSize1);
 }
 
 #knowMe{
@@ -159,5 +164,40 @@ p{
 
 #skillQual{
     grid-area: skillQual;
+    border: solid;
+}
+
+
+/* Projects */
+#projects{
+    border: solid;
+    margin: 50px 30vh;
+    height: 80vh; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr 2fr;
+    grid-template-areas:
+    "projectHeading projectHeading"
+    "project1 project1"
+    "project2 project3";
+}
+
+#projectHeading{
+    grid-area: projectHeading;
+    border: solid;
+}
+
+#project1{
+    grid-area: project1;
+    border: solid;
+}
+
+#project2{
+    grid-area: project2;
+    border: solid;
+}
+
+#project3{
+    grid-area: project3;
     border: solid;
 }
