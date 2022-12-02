@@ -3,7 +3,7 @@
     --background1: #10101a;
     --rainbow: linear-gradient(to right, orange , yellow, cyan, blue, violet);
     --primaryColor: rgb(206, 229, 249);
-    --secondaryColor: 
+    --secondaryColor: rgba(11, 102, 221, 0.951)
 }
 
 * {
@@ -32,8 +32,8 @@ p{
     margin: 0;
 }
 
-/* Nav Bar */
 
+/* Nav Bar */
 .header{
     display: flex;
     align-items: center;
@@ -42,7 +42,7 @@ p{
     border-bottom: 1px solid;
     padding-right: 15px;
     padding-left: 15px;
-    margin: 0px, auto, 250px, auto;
+    margin: 0px auto 50px auto;
 }
 
 #logo{
@@ -60,14 +60,14 @@ p{
 
 .navButtons li{
     display: inline-block;
-    padding: 1px 60px;
+    padding: 0px 60px;
     list-style: none;
     font-size: 20px;
 }
 
 .navButtons li:hover{
     cursor: pointer;
-    color: cyan;
+    color: var(--secondaryColor);
     text-decoration: underline;
 }
 
@@ -83,3 +83,34 @@ p{
 }
 
 /* Hi Section */
+#hiSection{
+    border: solid 3px;
+    margin: 50px 15vh;
+    height: 80vh; 
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "hiHeading1 icon"
+    "hiHeading2 icon"
+    "hiBasic icon";
+}
+
+#hiHeading1{
+    grid-area: hiHeading1;
+}
+
+#hiHeading2{
+    grid-area: hiHeading2;
+}
+
+#hiBasic{
+    grid-area: hiBasic;
+}
+
+#icon{
+    grid-area: icon;
+    max-height: 70vh;
+    justify-self: right;
+    align-self: flex-end;
+}
