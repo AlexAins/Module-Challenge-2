@@ -3,7 +3,9 @@
     --background1: #10101a;
     --rainbow: linear-gradient(to right, orange , yellow, cyan, blue, violet);
     --primaryColor: rgb(206, 229, 249);
-    --secondaryColor: rgba(11, 102, 221, 0.951)
+    --secondaryColor: rgba(11, 102, 221, 0.951);
+    --thirdColor:rgb(162, 180, 196);
+    --fourthColor:rgb(124, 135, 147);
 }
 
 * {
@@ -84,11 +86,10 @@ p{
 
 /* Hi Section */
 #hiSection{
-    border: solid 3px;
     margin: 50px 15vh;
     height: 80vh; 
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 60% 40%;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
     "hiHeading1 icon"
@@ -98,19 +99,37 @@ p{
 
 #hiHeading1{
     grid-area: hiHeading1;
+    justify-self: flex-start;
+    align-self: flex-end;
+    flex-wrap: wrap;
+    font-size: 100px;
 }
 
 #hiHeading2{
     grid-area: hiHeading2;
+    justify-self: flex-start;
+    align-self: center;
+    flex-wrap: wrap;
+    font-size: 70px;
+    color: var(--thirdColor);
 }
 
 #hiBasic{
     grid-area: hiBasic;
+    justify-self: center;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    font-size: 50px;
+    color: var(--fourthColor);
 }
 
 #icon{
     grid-area: icon;
     max-height: 70vh;
     justify-self: right;
-    align-self: flex-end;
+    align-self: center;
+    background-color: transparent;
+    margin: -15vh;
 }
+
+/* About Me */
