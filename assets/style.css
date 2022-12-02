@@ -84,9 +84,10 @@ p{
     text-decoration: underline;
 }
 
+
 /* Hi Section */
 #hiSection{
-    margin: 50px 15vh;
+    margin: 50px 30vh;
     height: 80vh; 
     display: grid;
     grid-template-columns: 60% 40%;
@@ -110,7 +111,7 @@ p{
     justify-self: flex-start;
     align-self: center;
     flex-wrap: wrap;
-    font-size: 70px;
+    font-size: 60px;
     color: var(--thirdColor);
 }
 
@@ -119,7 +120,7 @@ p{
     justify-self: center;
     align-self: flex-start;
     flex-wrap: wrap;
-    font-size: 50px;
+    font-size: 35px;
     color: var(--fourthColor);
 }
 
@@ -132,4 +133,31 @@ p{
     margin: -15vh;
 }
 
+
 /* About Me */
+#aboutMe{
+    border: solid;
+    margin: 50px 30vh;
+    height: 80vh; 
+    display: grid;
+    grid-template-columns: 1fr 10vh 1fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas:
+    "aboutHeading aboutHeading aboutHeading"
+    "knowMe . skillQual";
+}
+
+#aboutHeading{
+    grid-area: aboutHeading;
+    border: solid;
+}
+
+#knowMe{
+    grid-area: knowMe;
+    border: solid;
+}
+
+#skillQual{
+    grid-area: skillQual;
+    border: solid;
+}
