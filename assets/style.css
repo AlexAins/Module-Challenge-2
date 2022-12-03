@@ -149,7 +149,7 @@ p{
     margin: 50px 30vh;
     display: grid;
     grid-template-columns: 1fr 10vh 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 100px 4fr;
     grid-template-areas:
     "aboutHeading aboutHeading aboutHeading"
     "knowMe . skillQual";
@@ -158,7 +158,7 @@ p{
 #aboutHeading{
     grid-area: aboutHeading;
     border: solid;
-    align-self: flex-start;
+    align-self: center;
     justify-self: flex-end;
     color: var(--primaryColor);
     font-size: var(--headingSize1);
@@ -198,10 +198,11 @@ p{
 /* Projects */
 #projects{
     border: solid;
+    height: 80vh;
     margin: 50px 30vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 4fr 2fr;
+    grid-template-rows: 100px 4fr 2fr;
     grid-template-areas:
     "projectHeading projectHeading"
     "project1 project1"
@@ -211,7 +212,7 @@ p{
 #projectHeading{
     grid-area: projectHeading;
     border: solid;
-    align-self: flex-start;
+    align-self: center;
     justify-self: flex-start;
     color: var(--primaryColor);
     font-size: var(--headingSize1);
@@ -234,11 +235,10 @@ p{
 
 /* Contact */
 #contact{
-    border: solid;
     margin: 50px 30vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 75px;
     grid-template-areas:
     "contactHeading"
     "contactContent"
@@ -247,26 +247,21 @@ p{
 
 #contactHeading{
     grid-area: contactHeading;
-    border:solid;
-    align-self: flex-start;
-    justify-self: flex-end ;
+    align-self: center;
+    justify-self: center ;
     color: var(--primaryColor);
     font-size: var(--headingSize1);
 }
 
 #contactContent{
     grid-area: contactContent;
-    border: solid;
+    text-align: center;
     font-size: var(--fontSize1);
     color: var(--fourthColor);
 }
 
 .smIcons{
     grid-area: icons;
-    border: solid;
-}
-
-.smIcons{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -282,4 +277,5 @@ p{
 /* Footer */
 #footer{
     text-align: center;
+    margin: 25px;
 }
