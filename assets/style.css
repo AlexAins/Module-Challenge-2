@@ -162,6 +162,7 @@ p{
 
 #aboutMe h3{
     font-size: var(--headingSize2);
+    color: var(--thirdColor);
 }
 
 #knowMe{
@@ -171,6 +172,7 @@ p{
 
 #knowMe p{
     font-size: var(--fontSize1);
+    color: var(--fourthColor);
 }
 
 #skillQual{
@@ -180,10 +182,12 @@ p{
 
 #skillQual h4{
     font-size: var(--headingSize3);
+    color: var(--thirdColor);
 }
 
 #skillQual li{
     font-size: var(--fontSize1);
+    color: var(--fourthColor);
 }
 
 
