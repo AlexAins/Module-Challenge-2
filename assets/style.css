@@ -236,3 +236,48 @@ p{
 }
 
 /* Contact */
+#contact{
+    border: solid;
+    margin: 50px 30vh;
+    height: 10vh; 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "contactHeading"
+    "contactContent"
+    "icons";
+}
+
+#contactHeading{
+    grid-area: contactHeading;
+    border:solid;
+    align-self: flex-start;
+    justify-self: flex-end ;
+    color: var(--primaryColor);
+    font-size: var(--headingSize1);
+}
+
+#contactContent{
+    grid-area: contactContent;
+    border: solid;
+    font-size: var(--fontSize1);
+    color: var(--fourthColor);
+}
+
+.smIcons{
+    grid-area: icons;
+    border: solid;
+}
+
+.smIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 25%;
+}
+
+.smIcons img{
+    text-decoration: none;
+    max-height: 25px;
+}
