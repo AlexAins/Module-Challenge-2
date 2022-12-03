@@ -2,6 +2,7 @@
 :root{
     --background1: #10101a;
     --rainbow: linear-gradient(to right, red, violet, cyan, blue);
+    --rainbow2: linear-gradient(to right, violet, cyan, blue);
     --primaryColor: rgb(206, 229, 249);
     --secondaryColor: rgba(5, 225, 225, 0.951);
     --thirdColor:rgb(144, 160, 174);
@@ -115,6 +116,13 @@ p{
     font-size: 100px;
 }
 
+#hiHeading1 span{
+    background: var(--rainbow2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 #hiHeading2{
     grid-area: hiHeading2;
     justify-self: flex-start;
@@ -160,8 +168,11 @@ p{
     border: solid;
     align-self: center;
     justify-self: flex-end;
-    color: var(--primaryColor);
     font-size: var(--headingSize1);
+    background: var(--rainbow2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #aboutMe h3{
@@ -214,8 +225,11 @@ p{
     border: solid;
     align-self: center;
     justify-self: flex-start;
-    color: var(--primaryColor);
     font-size: var(--headingSize1);
+    background: var(--rainbow2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #project1{
@@ -249,8 +263,11 @@ p{
     grid-area: contactHeading;
     align-self: center;
     justify-self: center ;
-    color: var(--primaryColor);
     font-size: var(--headingSize1);
+    background: var(--rainbow2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #contactContent{
