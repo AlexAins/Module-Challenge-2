@@ -98,7 +98,6 @@ p{
 /* Hi Section */
 #hiSection{
     margin: 50px 30vh;
-    height: 80vh; 
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 1fr 1fr 1fr;
@@ -148,7 +147,6 @@ p{
 #aboutMe{
     border: solid;
     margin: 50px 30vh;
-    height: 80vh; 
     display: grid;
     grid-template-columns: 1fr 10vh 1fr;
     grid-template-rows: 1fr 4fr;
@@ -201,7 +199,6 @@ p{
 #projects{
     border: solid;
     margin: 50px 30vh;
-    height: 80vh; 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 4fr 2fr;
@@ -239,7 +236,6 @@ p{
 #contact{
     border: solid;
     margin: 50px 30vh;
-    height: 10vh; 
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -274,10 +270,16 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     margin: 0 25%;
 }
 
 .smIcons img{
     text-decoration: none;
     max-height: 25px;
+}
+
+/* Footer */
+#footer{
+    text-align: center;
 }
