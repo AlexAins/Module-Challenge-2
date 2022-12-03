@@ -7,6 +7,9 @@
     --thirdColor:rgb(144, 160, 174);
     --fourthColor:rgb(96, 103, 111);
     --headingSize1: 50px;
+    --headingSize2: 40px;
+    --headingSize3: 30px;
+    --fontSize1: 20px;
 }
 
 * {
@@ -51,7 +54,7 @@ p{
 #logo{
     display: inline-block;
     font-family: cursive;
-    font-size: 50px;
+    font-size: var(--headingSize1);
     padding-left: 5px;
 }
 
@@ -65,7 +68,7 @@ p{
     display: inline-block;
     padding: 0px 60px;
     list-style: none;
-    font-size: 20px;
+    font-size: var(--fontSize1);
 }
 
 .navButtons li:hover{
@@ -157,14 +160,30 @@ p{
     font-size: var(--headingSize1);
 }
 
+#aboutMe h3{
+    font-size: var(--headingSize2);
+}
+
 #knowMe{
     grid-area: knowMe;
     border: solid;
 }
 
+#knowMe p{
+    font-size: var(--fontSize1);
+}
+
 #skillQual{
     grid-area: skillQual;
     border: solid;
+}
+
+#skillQual h4{
+    font-size: var(--headingSize3);
+}
+
+#skillQual li{
+    font-size: var(--fontSize1);
 }
 
 
@@ -185,6 +204,10 @@ p{
 #projectHeading{
     grid-area: projectHeading;
     border: solid;
+    align-self: flex-start;
+    justify-self: flex-start;
+    color: var(--primaryColor);
+    font-size: var(--headingSize1);
 }
 
 #project1{
