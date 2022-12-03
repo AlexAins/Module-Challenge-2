@@ -91,11 +91,6 @@ p{
     -webkit-text-fill-color: transparent;
 }
 
-#resumeNav:hover{
-    text-decoration: underline;
-}
-
-
 /* Hi Section */
 #hiSection{
     margin: 50px 30vh;
@@ -153,7 +148,6 @@ p{
 
 /* About Me */
 #aboutMe{
-    border: solid;
     margin: 50px 30vh;
     display: grid;
     grid-template-columns: 1fr 10vh 1fr;
@@ -165,7 +159,6 @@ p{
 
 #aboutHeading{
     grid-area: aboutHeading;
-    border: solid;
     align-self: center;
     justify-self: flex-end;
     font-size: var(--headingSize1);
@@ -182,7 +175,6 @@ p{
 
 #knowMe{
     grid-area: knowMe;
-    border: solid;
 }
 
 #knowMe p{
@@ -192,7 +184,6 @@ p{
 
 #skillQual{
     grid-area: skillQual;
-    border: solid;
 }
 
 #skillQual h4{
@@ -208,7 +199,6 @@ p{
 
 /* Projects */
 #projects{
-    border: solid;
     height: 80vh;
     margin: 50px 30vh;
     display: grid;
@@ -222,7 +212,6 @@ p{
 
 #projectHeading{
     grid-area: projectHeading;
-    border: solid;
     align-self: center;
     justify-self: flex-start;
     font-size: var(--headingSize1);
@@ -235,16 +224,36 @@ p{
 #project1{
     grid-area: project1;
     border: solid;
+    background-image: url(../assets/images/Screenshot\ 2022-12-03\ at\ 20.56.55.png);
 }
 
 #project2{
     grid-area: project2;
     border: solid;
+    background-image: url(../assets/images/Screenshot\ 2022-12-03\ at\ 20.46.47.png);
 }
 
 #project3{
     grid-area: project3;
     border: solid;
+    background-image: url(../assets/images/Screenshot\ 2022-12-03\ at\ 20.46.57.png);
+}
+
+.projLink{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.projLink h3{
+    background-color: transparent;
+    color: transparent;
+}
+
+.projLink h3:hover{
+    cursor: pointer;
 }
 
 /* Contact */
