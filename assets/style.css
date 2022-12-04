@@ -143,6 +143,7 @@ p{
     align-self: center;
     background-color: transparent;
     margin: -15vh;
+    padding-bottom: 25px;
 }
 
 
@@ -160,7 +161,7 @@ p{
 #aboutHeading{
     grid-area: aboutHeading;
     align-self: center;
-    justify-self: flex-end;
+    justify-self: flex-start;
     font-size: var(--headingSize1);
     background: var(--rainbow2);
     background-clip: text;
@@ -247,12 +248,14 @@ p{
     border-radius: 8px;
 }
 
-.projLink h3{
-    background-color: transparent;
-    color: transparent;
+.projLink a{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: var(--primaryColor);
+    text-decoration: none;
+    justify-self: flex-end;
 }
 
-.projLink h3:hover{
+.projLink a:hover{
     cursor: pointer;
 }
 
