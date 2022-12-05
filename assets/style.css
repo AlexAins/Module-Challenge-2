@@ -324,3 +324,55 @@ p{
     text-align: center;
     margin: 25px;
 }
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px){
+    #hiSection{
+        margin: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "hiHeading1"
+        "hiHeading2"
+        "hiBasic"
+        "icon";
+    }
+
+    #aboutMe{
+        margin: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr 3fr;
+        grid-template-areas:
+        "aboutHeading"
+        "knowMe"
+        "skillQual";
+    }
+
+    #projects{
+        margin: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr 2fr 2fr;
+        grid-template-areas:
+        "projectHeading"
+        "project1"
+        "project2"
+        "project3";
+    }
+
+    #contact{
+        margin: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 75px;
+        grid-template-areas:
+        "contactHeading"
+        "contactContent"
+        "icons";
+    }
+}
+
