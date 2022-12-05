@@ -91,6 +91,7 @@ p{
     -webkit-text-fill-color: transparent;
 }
 
+
 /* Hi Section */
 #hiSection{
     margin: 50px 30vh;
@@ -269,8 +270,9 @@ p{
 }
 
 .projLink:hover h3{
-    color: rgba(0,0,0,0.1);
+    color: rgba(0,0,0,0);
 }
+
 
 /* Contact */
 #contact{
@@ -315,6 +317,7 @@ p{
     text-decoration: none;
     max-height: 25px;
 }
+
 
 /* Footer */
 #footer{
