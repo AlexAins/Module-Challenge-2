@@ -1,8 +1,7 @@
 
 :root{
     --background1: #10101a;
-    --rainbow: linear-gradient(to right, red, violet, cyan, blue);
-    --rainbow2: linear-gradient(to right, violet, cyan, blue);
+    --rainbow: linear-gradient(to right, violet, cyan, blue);
     --primaryColor: rgb(206, 229, 249);
     --secondaryColor: rgba(5, 225, 225, 0.951);
     --thirdColor:rgb(144, 160, 174);
@@ -84,7 +83,7 @@ p{
     text-decoration: underline;
 }
 
-#resumeNav{
+#resumeNav a{
     background: var(--rainbow);
     background-clip: text;
     -webkit-background-clip: text;
@@ -113,7 +112,7 @@ p{
 }
 
 #hiHeading1 span{
-    background: var(--rainbow2);
+    background: var(--rainbow);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -163,7 +162,7 @@ p{
     align-self: center;
     justify-self: flex-start;
     font-size: var(--headingSize1);
-    background: var(--rainbow2);
+    background: var(--rainbow);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -216,7 +215,7 @@ p{
     align-self: center;
     justify-self: flex-start;
     font-size: var(--headingSize1);
-    background: var(--rainbow2);
+    background: var(--rainbow);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -291,7 +290,7 @@ p{
     align-self: center;
     justify-self: center ;
     font-size: var(--headingSize1);
-    background: var(--rainbow2);
+    background: var(--rainbow);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
