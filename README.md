@@ -13,6 +13,9 @@ This information is displayed through various sections:
 
 This portfolio was created as a platform to show previous work, allowing for easy access. It also provides basic information about me and various ways to contact me.
 
+As shown in the screenshot below:
+![alt text](./assets/images/127.0.0.1_5500_index.html%20(1).png)
+
 ## Credits
 
 N/A
