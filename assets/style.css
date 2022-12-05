@@ -328,6 +328,7 @@ p{
 
 /* Media Queries */
 
+/* Screens under 600px */
 @media only screen and (max-width: 600px){
     #hiSection{
         margin: 50px;
@@ -339,6 +340,12 @@ p{
         "hiHeading2"
         "hiBasic"
         "icon";
+    }
+
+    #icon{
+        max-height: 500px;
+        justify-self: center;
+        margin-bottom: 100px;
     }
 
     #aboutMe{
@@ -376,3 +383,42 @@ p{
     }
 }
 
+/* Screens between 601px and 992px */
+@media only screen and (max-width: 992px){
+    #hiSection{
+        margin: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "hiHeading1"
+        "hiHeading2"
+        "hiBasic"
+        "icon";
+    }
+
+    #icon{
+        max-height: 500px;
+        justify-self: center;
+        margin-bottom: 100px;
+    }
+
+    #aboutMe{
+        margin: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr 3fr;
+        grid-template-areas:
+        "aboutHeading"
+        "knowMe"
+        "skillQual";
+    }
+
+    #projects{
+        margin: 50px;        
+    }
+
+    #contact{
+        margin: 50px;
+    }
+}
