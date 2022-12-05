@@ -330,6 +330,10 @@ p{
 
 /* Screens under 600px */
 @media only screen and (max-width: 600px){
+    .navButtons li{
+        padding: 0px 5px;
+    }
+
     #hiSection{
         margin: 50px;
         display: grid;
@@ -385,6 +389,10 @@ p{
 
 /* Screens between 601px and 992px */
 @media only screen and (max-width: 992px){
+    .navButtons li{
+        padding: 0px 8px;
+    }
+
     #hiSection{
         margin: 50px;
         display: grid;
